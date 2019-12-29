@@ -1,6 +1,5 @@
 package guru.springframework.spring5webapp.repository;
 
-import guru.springframework.spring5webapp.models.Author;
 import guru.springframework.spring5webapp.models.Book;
 import org.springframework.data.repository.CrudRepository;
 
