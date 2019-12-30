@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+</head>
+<body>
+<h1>Author list</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    <!-- setting up iterator  take books property from model -->
+    <tr th:each="author: ${authors}">
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName}">Jerry</td>
+        <td th:text="${author.lastName}">Mouse</td>
+    </tr>
+</table>
+
+</body>
+</html>
